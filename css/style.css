@@ -40,6 +40,29 @@
     font-weight: 100;
 }
 
+.author {
+    font-size: 12px;
+    position: absolute;
+    top: 97%;
+    left: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: #08969b; 
+}
+
+a:hover {
+    color: #08969b; 
+    text-decoration: none; 
+    cursor: pointer;  
+}
+
+a:visited {
+    color: #08969b; 
+    text-decoration: none;  
+}
+
 .content {
     width: 60vw;
     background-color: rgb(35, 34, 33);
@@ -82,5 +105,12 @@ svg {
         top: 7vh;
         gap: 20px;
         padding: 20px 0px;
+    }
+
+    .author {
+        font-size: 12px;
+        position: absolute;
+        top: 27%;
+        left: 40%;
     }
   }
