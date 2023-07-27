@@ -18,11 +18,10 @@ It's a sign up form that let me explored and practised form validation and styli
 * JavaScript
 
 ## Screenshots
-![Wepage](./images/)
-![Wepage When Won](./images/)
+![Wepage](./images/shots.png)
 
-## Link to game
-
+## Link to webpage
+https://agata10.github.io/sign-up-form/
 
 ## Setup
 
@@ -32,4 +31,9 @@ or
    `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
 ## Usage
-
+It's a simple sign-up form which populate the parsed info into url of webpage after submitting.<br />
+The form is using validation:<br />
+1. First/Last name: accepts only letters
+2. Number has to have format with - (123-123-1234)
+3. Password has to have 8 characters, 1 letter and 1 number
+4. To confirm password I used onchange event on both inputs. If the passwords do not match, the submit button is disabled and error is poped out.
