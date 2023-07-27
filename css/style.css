@@ -73,6 +73,7 @@ a:visited {
     background-color: rgb(35, 34, 33);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: Montserrat, Helvetica;
 }
 
@@ -81,19 +82,24 @@ header {
     align-items: center;
     margin-left: 30px;
     width: 75%;
-    height: 30%;
     font-size: 12px;
     font-weight: 300;
     color: beige;
 }
 
 .main {
-    display: flex;
-    align-items: center;
+    gap: 20px;
     padding-left: 30px;
-    height: 50%;
     background-color: rgb(40, 39, 38);
     box-shadow: 0 4px 10px -2px rgb(86, 82, 82);
+}
+
+form h2 {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: beige;
+    margin-top: 40px;
 }
 
 form {
@@ -101,8 +107,6 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 1 1 auto;
-    width: 100%;
     gap: 40px;
 }
 
@@ -116,8 +120,10 @@ input {
     margin-top: 2px;
     width: 160px;
     height: 30px;
+    text-indent: 5px; /*for placeholder padding*/
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
 }
-
 
 footer {
     display: flex;
@@ -126,9 +132,9 @@ footer {
     margin-left: 30px;
     gap: 30px;
     width: 50%;
-    height: 20%;
     color: beige;
     font-size: 12px;
+    flex: 1 1 auto;
 }
 
 p > a:hover {
@@ -158,18 +164,17 @@ button:hover {
     .wrap-all-content {
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%;
-        height: 100vh;
-        overflow: scroll;
+        height: auto;
     }
 
     .sidebar {
-        width: 100%;
-        height: 10vh;
+        width: 100vw;
+        height: 12vh;
     }
 
     .logo {
-        top: 1vh;
+        width: 100vw;
+        top: 2vh;
         height: 50px;
     }
 
@@ -179,21 +184,18 @@ button:hover {
 
     .content {
         width: 100%;  
-        height: 90vh;
+        height: auto;
     }
 
     header {
         margin: 5px auto;
         font-size: 10px;
-        height: auto;
     }
 
     .main {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
         width: 100%;
-        flex-direction: column;
-        height: auto;
     }
 
     form {  
@@ -204,26 +206,32 @@ button:hover {
         gap: 5px;
     }
 
+    form h2 {
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+        color: beige;
+        margin: 6px auto;
+    }
+
     input {
         margin-bottom: 15px;
         margin-top: 2px;
         width: 200px;
-        height: 30px;
     }
     
     footer {
         align-items: center;
-        margin: 5px auto;
-        padding: 5px auto;
-        gap: 10px;
+        gap: 5px;
         width: 100%;
-        height: auto;
         color: beige;
         font-size: 10px;
     }
     
     button {
-        font-size: 12px;
+        font-size: 10px;
+        height: 20px;
+        padding: 5px 35px;
     }
   
 }
