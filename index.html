@@ -36,7 +36,7 @@
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" placeholder="Agata1@gmail.com" required><br>
                     <label for="pass">Password<br></label>
-                    <input type="password" id="pass" name="pass" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="8 characters, one letter and number">
+                    <input type="password" id="pass" name="pass" onChange="onChange()" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="8 characters, one letter and number">
                     <span class="error"></span>
                     </div>
                     <div class="right">
@@ -45,15 +45,16 @@
                     <label for="phone">Phone</label><br>
                     <input type="tel" id="phone" name="phone" placeholder="890-123-4567" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     <label for="cPass">Confirm password</label><br>
-                    <input type="password" id="cPass" name="cPass" required><br>
+                    <input type="password" id="cPass" name="cPass" onChange="onChange()" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"><br>
                     </div>                  
             </div>
             <footer>
-                <button type="submit">Create Account</button>
+                <button type="submit" id="mySubmit">Create Account</button>
             </form>    
                 <p>Already have an account?&nbsp;<a href="https://www.youtube.com/watch?v=GKSRyLdjsPA">Log in</a></p>
             </footer>
         </div>
     </div>
+    <script src="./javascript/javascript.js"></script>
 </body>
 </html>
