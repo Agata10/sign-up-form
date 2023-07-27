@@ -122,8 +122,26 @@ input {
     width: 160px;
     height: 30px;
     text-indent: 5px; /*for placeholder padding*/
-    border: 1px solid #E5E7EB;
+    border: 0.5px solid #E5E7EB;
+    background-color: rgb(35, 34, 33);;
     border-radius: 5px;
+}
+
+input + span {
+    position: relative;
+    font-size: 8px;
+    top: 20px;
+    right: 160px;
+    color: rgb(156, 27, 27);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+input[type="password"]:invalid:required {
+    border: 2px solid var(--color);
 }
 
 footer {

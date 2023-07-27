@@ -32,20 +32,20 @@
                     <h2>Let's do this!</h2>
                     <div class="left">
                     <label for="fname">First name</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="Agata"><br>
+                    <input type="text" id="fname" name="fname" placeholder="Agata" required><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="Agata1@gmail.com"><br>
-                    <label for="pass">Password</label><br>
-                    <input type="password" id="pass" name="pass"><br>
-                    <span class="error"></span>
+                    <input type="email" id="email" name="email" placeholder="Agata1@gmail.com" required><br>
+                    <label for="pass">Password<br></label>
+                    <input type="password" id="pass" name="pass" required>
+                    <span class="error">*Passwords do not much</span>
                     </div>
                     <div class="right">
                     <label for="lname">Last name</label><br>
-                    <input type="text" id="lname" name="lname" placeholder="D"><br>
+                    <input type="text" id="lname" name="lname" placeholder="D" required><br>
                     <label for="phone">Phone</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="890-123-4567"><br>
+                    <input type="tel" id="phone" name="phone" placeholder="890-123-4567" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     <label for="cPass">Confirm password</label><br>
-                    <input type="password" id="cPass" name="cPass"><br>
+                    <input type="password" id="cPass" name="cPass" required><br>
                     </div>
                 </form>                   
             </div>
