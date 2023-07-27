@@ -32,7 +32,7 @@
                     <h2>Let's do this!</h2>
                     <div class="left">
                     <label for="fname">First name</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="Agata" required><br>
+                    <input type="text" id="fname" name="fname" placeholder="Agata" required pattern="[a-zA-Z]+" minlength="3" maxlength="10"><br>
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" placeholder="Agata1@gmail.com" required><br>
                     <label for="pass">Password<br></label>
@@ -41,16 +41,16 @@
                     </div>
                     <div class="right">
                     <label for="lname">Last name</label><br>
-                    <input type="text" id="lname" name="lname" placeholder="D" required><br>
+                    <input type="text" id="lname" name="lname" placeholder="Data" required pattern="[a-zA-Z]+" minlength="3" maxlength="10"><br>
                     <label for="phone">Phone</label><br>
                     <input type="tel" id="phone" name="phone" placeholder="890-123-4567" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                     <label for="cPass">Confirm password</label><br>
                     <input type="password" id="cPass" name="cPass" required><br>
-                    </div>
-                </form>                   
+                    </div>                  
             </div>
             <footer>
                 <button type="submit">Create Account</button>
+            </form>    
                 <p>Already have an account?&nbsp;<a href="https://www.youtube.com/watch?v=GKSRyLdjsPA">Log in</a></p>
             </footer>
         </div>
