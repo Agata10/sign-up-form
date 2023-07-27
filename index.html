@@ -36,8 +36,8 @@
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" placeholder="Agata1@gmail.com" required><br>
                     <label for="pass">Password<br></label>
-                    <input type="password" id="pass" name="pass" required>
-                    <span class="error">*Passwords do not much</span>
+                    <input type="password" id="pass" name="pass" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="8 characters, one letter and number">
+                    <span class="error"></span>
                     </div>
                     <div class="right">
                     <label for="lname">Last name</label><br>
