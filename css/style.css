@@ -132,10 +132,6 @@ input {
     border-radius: 5px;
 }
 
-input:valid {
-    background-color: rgb(35, 34, 33);;
-}
-
 input::placeholder {
     font-size: 0.75rem;
     opacity: 0.5;
