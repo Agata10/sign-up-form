@@ -1,17 +1,21 @@
+:root{
+    --color: #08969b;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: beige;
 }
 
 .wrap-all-content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     height: 100vh;
 }
 
 .sidebar {
-    height: auto;
     width: 40vw;
     background-image: url(../images/back.jpg);
     background-size: cover;
@@ -21,7 +25,6 @@
 
 .logo {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #000;
@@ -34,7 +37,6 @@
 }
 
 .logo-name {
-    color: beige;
     font-size: 48px;
     font-family: "Dancing Script", Arial;
     font-weight: 100;
@@ -54,42 +56,44 @@ svg {
 
 a {
     text-decoration: none;
-    color: #08969b;
+    color: var(--color);
 }
 
 a:hover {
-    color: #08969b;
+    color: var(--color);
     text-decoration: none;
     cursor: pointer;
 }
 
 a:visited {
-    color: #08969b;
+    color: var(--color);
     text-decoration: none;
 }
 
+/*right side*/
+
 .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 60vw;
     background-color: rgb(35, 34, 33);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: Montserrat, Helvetica;
 }
 
 header {
     display: flex;
     align-items: center;
-    margin-left: 30px;
     width: 75%;
+    margin-left: 3vw;
     font-size: 12px;
     font-weight: 300;
-    color: beige;
 }
 
 .main {
-    gap: 20px;
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     background-color: rgb(40, 39, 38);
     box-shadow: 0 4px 10px -2px rgb(86, 82, 82);
 }
@@ -98,15 +102,12 @@ form h2 {
     width: 100%;
     font-size: 20px;
     font-weight: 500;
-    color: beige;
-    margin-top: 40px;
 }
 
 form {
-    color: beige;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin-left: 3vw;
     gap: 40px;
 }
 
@@ -126,15 +127,13 @@ input {
 }
 
 footer {
+    padding-top: 0px;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-left: 30px;
+    justify-content: center;
     gap: 30px;
-    width: 50%;
-    color: beige;
     font-size: 12px;
-    flex: 1 1 auto;
+    margin-left: 3vw;
 }
 
 p > a:hover {
@@ -145,9 +144,8 @@ p > a:hover {
 
 button {
     font-family: Montserrat, Helvetica;
-    color: beige;
     background-color: rgb(35, 34, 33);
-    border: 2px solid #08969b;
+    border: 2px solid var(--color);
     width: 200px;
     border-radius: 8px;
     padding: 16px 35px;
@@ -155,7 +153,7 @@ button {
 }
 
 button:hover {
-    background-color: #08969b;
+    background-color: var(--color);
     cursor: pointer;
 }
 
@@ -163,8 +161,9 @@ button:hover {
 
     .wrap-all-content {
         flex-direction: column;
-        flex-wrap: wrap;
-        height: auto;
+        flex-wrap: nowrap;
+        height: 100%;
+        width: 100%;
     }
 
     .sidebar {
@@ -173,7 +172,6 @@ button:hover {
     }
 
     .logo {
-        width: 100vw;
         top: 2vh;
         height: 50px;
     }
@@ -183,49 +181,40 @@ button:hover {
     }
 
     .content {
-        width: 100%;  
-        height: auto;
+        width: 100%;
     }
 
     header {
-        margin: 5px auto;
+        text-align: center;
+        margin: 2vh auto;
         font-size: 10px;
     }
 
     .main {
         padding-top: 6px;
         padding-bottom: 6px;
-        width: 100%;
     }
 
-    form {  
+    form {
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
+        margin: 0 auto;
         gap: 5px;
     }
 
     form h2 {
-        width: 100%;
-        font-size: 20px;
-        font-weight: 500;
-        color: beige;
-        margin: 6px auto;
+        margin-left: 20px;
+        font-size: 16px;
     }
 
     input {
         margin-bottom: 15px;
         margin-top: 2px;
-        width: 200px;
     }
     
     footer {
-        align-items: center;
-        gap: 5px;
-        width: 100%;
-        color: beige;
+        gap: 10px;
         font-size: 10px;
+        margin: 2vh auto;
     }
     
     button {
